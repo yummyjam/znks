@@ -6,9 +6,9 @@ class Agree extends Component {
   render() {
     return (
       <label htmlFor="weuiAgree" className="weui-agree">
-        <input id="weuiAgree" type="checkbox" className="weui-agree__checkbox" ref={ (checkbox) => { this.checkbox = checkbox; } } />
+        <input id="weuiAgree" type="checkbox" className="weui-agree__checkbox" onClick={ this.props.onClick } />
         <span className="weui-agree__text">
-            阅读并同意<a href={ this.props.href }>《相关条款》</a>
+          阅读并同意<a href={ this.props.href }>《相关条款》</a>
         </span>
       </label>
     );

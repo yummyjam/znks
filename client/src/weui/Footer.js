@@ -9,11 +9,13 @@ class Footer extends Component {
       links.push(<a href={ this.props.links[key] } className="weui-footer__link">{ key }</a>);
     }
     return (
-      <div className="weui-footer">
-        <p className="weui-footer__links">
-          { links }
-        </p>
-        <p className="weui-footer__text">{ this.props.text }</p>
+      <div className="page__ft">
+        <div className="weui-footer">
+          <p className="weui-footer__links">
+            { links }
+          </p>
+          <p className="weui-footer__text">{ this.props.text }</p>
+        </div>
       </div>
     );
   }

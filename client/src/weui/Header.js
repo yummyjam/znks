@@ -6,7 +6,7 @@ class Header extends Component {
   render() {
     let desc;
     if (this.props.desc) {
-      desc = <p className="page__desc">页脚</p>;
+      desc = <p className="page__desc">{ this.props.desc }</p>;
     }
     return (
       <div className="page__hd">
