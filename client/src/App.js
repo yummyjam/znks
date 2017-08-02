@@ -8,6 +8,7 @@ import Select from "./weui/Select";
 import Textarea from "./weui/Textarea";
 import Agree from "./weui/Agree";
 import Btn from "./weui/Btn";
+import Router from 'react-router';
 
 class App extends Component {
   constructor(props) {
@@ -72,7 +73,7 @@ class App extends Component {
             <Input type="text" placeholder="留言给您的配送员" />
           </div>
           <Agree href="javascript:;" onClick={ this.agreementClick } />
-          <Btn label="确定" onClick={ this.state.isAgreed ?this.handleClick:undefined } className={ this.state.isAgreed ? '':'weui-btn_disabled' } />
+          <Btn label="确定" onClick={ this.state.isAgreed ? this.handleClick : undefined } disabled={ !this.state.isAgreed } />
         </div>
         <Footer links={ links } text="Copyright © 2008-2016 weui.io" />
       </div>

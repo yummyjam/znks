@@ -1,13 +1,18 @@
 import React, { Component } from 'react';
 import './example.css';
 import './weui.min.css';
-import classNames from 'classnames'
+import classNames from 'classnames';
 
 class Btn extends Component {
   render() {
+    let cla = classNames({
+      'weui-btn': true,
+      'weui-btn_primary': true,
+      'weui-btn_disabled': this.props.disabled
+    });
     return (
       <div className="weui-btn-area">
-        <a href="javascript:;" className="weui-btn weui-btn_primary" onClick={ this.props.onClick }>{ this.props.label }</a>
+        <a href="javascript:;" className={ cla } onClick={ this.props.onClick }>{ this.props.label }</a>
       </div>
     );
   }
