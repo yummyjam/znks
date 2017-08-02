@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
-import './weui/example.css';
-import './weui/weui.min.css';
-import Header from './weui/Header';
-import Footer from "./weui/Footer";
-import Input from "./weui/Input";
-import Select from "./weui/Select";
-import Textarea from "./weui/Textarea";
-import Agree from "./weui/Agree";
-import Btn from "./weui/Btn";
+import './components/weui/example.css';
+import './components/weui/weui.min.css';
+import Header from './components/Header';
+import Footer from "./components/Footer";
+import Input from "./components/Input";
+import Select from "./components/Select";
+import Textarea from "./components/Textarea";
+import Agree from "./components/Agree";
+import Btn from "./components/Btn";
 import Router from 'react-router';
 
 class App extends Component {

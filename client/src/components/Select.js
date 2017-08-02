@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import './example.css';
-import './weui.min.css';
+import './weui/example.css';
+import './weui/weui.min.css';
 
 class Select extends Component {
   render() {

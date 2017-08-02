@@ -359,7 +359,7 @@ body {
 }
 
 .page.layers .layers__layer_popout.j_pic {
-    border-color: transparent;
+    border-color: transparent
 }
 
 .page.layers .layers__layer_mask {
@@ -397,7 +397,7 @@ body {
 }
 
 .page.layers .layers__layer_navigation.j_pic {
-    background-color: transparent;
+    background-color: transparent
 }
 
 .page.layers .layers__layer_content {
