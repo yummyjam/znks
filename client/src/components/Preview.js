@@ -27,6 +27,7 @@ class Preview extends Component {
           { items }
         </div>
         <div className="weui-form-preview__ft">
+          { defaultBtn }
           <a className="weui-form-preview__btn weui-form-preview__btn_primary" href="javascript:;" onClick={ this.props.primaryClick }>{ this.props.primaryBtn }</a>
         </div>
       </div>

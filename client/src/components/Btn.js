@@ -12,7 +12,7 @@ class Btn extends Component {
     });
     return (
       <div className="weui-btn-area">
-        <a href="javascript:;" className={ cla } onClick={ this.props.onClick }>{ this.props.label }</a>
+        <a className={ cla } href="javascript:;" onClick={ this.props.onClick }>{ this.props.label }</a>
       </div>
     );
   }

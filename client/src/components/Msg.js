@@ -18,6 +18,7 @@ class Msg extends Component {
         <div className="weui-msg__opr-area">
           <p className="weui-btn-area">
             <a href="javascript:;" className="weui-btn weui-btn_primary" onClick={ this.props.primaryClick }>{ this.props.primaryBtn }</a>
+            { defaultBtn }
           </p>
         </div>
       </div>
