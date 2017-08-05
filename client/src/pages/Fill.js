@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import '../components/weui/example.css';
 import '../components/weui/weui.min.css';
+import Agree from "../components/Agree";
+import Btn from "../components/Btn";
 import Input from "../components/Input";
 import Select from "../components/Select";
 import Textarea from "../components/Textarea";
-import Agree from "../components/Agree";
-import Btn from "../components/Btn";
 
 class Fill extends Component {
   constructor(props) {
@@ -13,8 +13,8 @@ class Fill extends Component {
     this.state = {
       agree: false
     };
-    this.agreeClick = this.agreeClick.bind(this)
-    this.handleClick = this.handleClick.bind(this)
+    this.agreeClick = this.agreeClick.bind(this);
+    this.handleClick = this.handleClick.bind(this);
   }
   agreeClick() {
     this.setState(prevState => ({
@@ -22,7 +22,7 @@ class Fill extends Component {
     }));
   }
   handleClick() {
-    browserHistory.push('/confirm', this.state)
+    this.props.history.push('/confirm');
   }
   render() {
     return (
